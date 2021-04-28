@@ -143,7 +143,7 @@ $ helm install npm -f values.yaml verdaccio/verdaccio
 
 ### Custom ConfigMap
 
-When creating a new chart with this chart as a dependency, CustomConfigMap can
+When creating a new chart with this chart as a dependency, `existingConfigMap` can
 be used to override the default config.yaml provided. It also allows for
 providing additional configuration files that will be copied into
 `/verdaccio/conf`. In the parent chart's values.yaml, set the value to true and
